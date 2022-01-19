@@ -92,14 +92,14 @@ img {
 
 /* contact  */
 #contact .contact {
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100px;
 }
 .contact .logo {
-  visibility: hidden;
+  display: none;
 }
 .contact .logo h1 {
   font-size: 4rem;
@@ -108,10 +108,10 @@ img {
 .contact .logo h1 span {
   color: #0095e5;
 }
-.contact-content div {
+.contact-content {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
+  margin: 2rem 0;
 }
 
 .contact-content i {
@@ -169,9 +169,10 @@ img {
     align-items: center;
   }
   #contact .logo {
-    visibility: visible;
+    display: block;
   }
-  .contact-content-container {
+  .contact-container {
+    display: flex;
     flex-direction: row;
   }
   /* End contact  */
