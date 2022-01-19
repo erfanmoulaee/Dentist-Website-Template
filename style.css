@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* navBar  */
+#navBar {
+  background-color: #0095e5;
+}
+#navBar .navBar {
+  min-height: 85px;
+  flex-direction: column;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon .social-item {
+  margin: 12px;
+}
+.social-icon .social-item i {
+  font-weight: 400px;
+  font-size: 2rem;
+  color: #74b9ed;
+}
+.social-icon .social-item i:hover {
+  color: #ffffff;
+}
+.navBar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navBar-content p {
+  margin: 3px;
+  font-size: 2rem;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+.navBar-content p:nth-child(2) {
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.navBar-content p:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navBar-content p:nth-child(2):hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* End navBar  */
+
+/* contact  */
+#contact .contact {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100px;
+}
+.contact .logo {
+  visibility: hidden;
+}
+.contact .logo h1 {
+  font-size: 4rem;
+  color: #616262;
+}
+.contact .logo h1 span {
+  color: #0095e5;
+}
+.contact-content div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.contact-content i {
+  color: #0095e5;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #0095e5;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+.contact-content div h4 {
+  color: #616262;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.contact-content div span {
+  font-style: italic;
+  color: #616262;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* End contact  */
+
+/* Media Query For Tablet  */
+
+@media only screen and (min-width: 768px) {
+  /* navBar  */
+  #navBar .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    min-height: 50px;
+    vertical-align: middle;
+  }
+  .navBar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBar-content p:nth-child(2) {
+    margin-top: 15px;
+  }
+  /* navBar  */
+
+  /* contact  */
+  #contact .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #contact .logo {
+    visibility: visible;
+  }
+  .contact-content-container {
+    flex-direction: row;
+  }
+  /* End contact  */
+}
+/* End Media Query For Tablet  */
+
+/* Media Query For desktop  */
+@media only screen and (min-width: 1200px) {
+  /* navBar  */
+  #navBar .navBar {
+    padding: 0 8rem;
+  }
+  /* End navBar  */
+}
+
+/* End Media Query For desktop  */
