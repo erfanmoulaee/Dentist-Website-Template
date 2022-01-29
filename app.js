@@ -1,3 +1,5 @@
+// sideshow
+
 function classSwitcher() {
   slides.forEach((slide) => slide.classList.remove("active"));
   points.forEach((point) => point.classList.remove("active"));
@@ -28,3 +30,5 @@ points.forEach((point, index) => {
     classSwitcher();
   });
 });
+
+// End slideshow

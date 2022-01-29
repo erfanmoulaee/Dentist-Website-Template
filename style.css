@@ -248,6 +248,72 @@ img {
 
 /* End slideshow  */
 
+/* Why choose the BeDentist clinic? */
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0095e5;
+}
+.section-title {
+  font-size: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+  padding: 0 1rem;
+  margin-top: 3rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#product-img {
+  color: #ffffff;
+  font-size: 50px;
+  width: 137px;
+  height: 137px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #0095e5;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product-img:hover {
+  color: #0095e5;
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-desc h4 {
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.product-desc p {
+  margin-top: 13px;
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
 /* Media Query For Tablet  */
 
 @media screen and (min-width: 768px) {
