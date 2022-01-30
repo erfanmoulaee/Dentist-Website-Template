@@ -247,6 +247,48 @@ img {
 }
 
 /* End slideshow  */
+/* Welcome to BeDentist */
+.welcome {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+}
+.welcome-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+  padding: 0 1rem;
+  margin: 3rem 0;
+}
+.welcome-desc h1 {
+  color: #0095e5;
+  font-size: 50px;
+}
+.welcome-desc {
+  margin-top: 40px;
+}
+.welcome-desc h3 {
+  color: #0095e5;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 6px 0 0;
+}
+.welcome-desc p {
+  color: #616262;
+  font-size: 20px;
+  margin: 0px 0px 12px;
+}
+.welcome-img {
+  min-height: 120px;
+  object-fit: contain;
+}
+
+/* End Welcome to BeDentist */
 
 /* Why choose the BeDentist clinic? */
 
