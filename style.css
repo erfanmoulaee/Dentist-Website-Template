@@ -409,7 +409,184 @@ img {
   margin-bottom: 8rem;
 }
 /* end our services */
+/* What our patients say  */
 
+.patients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7f7;
+}
+.patients-title {
+  font-size: 50px;
+  color: #0095e5;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.patients-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+  padding: 0 2rem;
+  margin-top: 3rem;
+}
+.patient {
+  padding-bottom: 2rem;
+}
+.patient-container {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patient-img {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+}
+.patient-desc {
+  padding-top: 3rem;
+  text-align: center;
+  align-items: flex-start;
+}
+.patient-desc i {
+  color: #0095e5;
+  font-weight: 700;
+  font-size: 30px;
+}
+.patient-desc p {
+  color: #616262;
+  font-size: 20px;
+}
+.patient-desc h4 {
+  color: #949494;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+.patient-desc h4 span {
+  color: #616262;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* How we can help  */
+
+.help {
+  background-color: #0095e5;
+  min-height: 40vh;
+}
+.help-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 0;
+}
+.help-desc h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+.help-center p {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 8px 0 0;
+}
+.help-btn {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0095e5;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  padding: 12px 15px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px -3px rgb(0 0 0 / 8%);
+}
+.help-btn:hover {
+  background-color: #1d4458;
+  color: #ffffff;
+}
+/* Recent news  */
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7f7;
+}
+.news-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 50px;
+}
+.new-product-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.news-title {
+  font-size: 50px;
+  color: #0095e5;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.news-img {
+  width: 100%;
+  min-height: 120px;
+}
+.news-product-title {
+  color: #0095e5;
+  font-size: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.news-product-title:hover {
+  color: #184b66;
+}
+.new-product-date li {
+  font-size: 20px;
+  color: #949494;
+  margin: 10px;
+}
+.new-product-date li span {
+  color: #616262;
+  font-weight: 700;
+}
+.new-product-date .dental {
+  color: #0095e5;
+  cursor: pointer;
+}
+.new-product-desc p {
+  color: #616262;
+  font-size: 20px;
+  margin: 15px 0 0;
+}
+.news-btn {
+  margin-bottom: 100px;
+}
+.news-btn a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #0095e5;
+  border-color: #0095e5;
+  padding: 12px 15px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px -3px rgb(0 0 0 / 8%);
+}
+
+/* End Recent news */
 /* Media Query For Tablet  */
 
 @media screen and (min-width: 768px) {
@@ -490,6 +667,13 @@ img {
   }
 
   /* End slideshow  */
+  /* help  */
+  .help-center {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+  }
+  /* end help  */
 }
 /* End Media Query For Tablet  */
 
