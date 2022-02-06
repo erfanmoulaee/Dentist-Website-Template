@@ -777,6 +777,34 @@ nav ul li:hover .submenu-1 {
 .row-four li {
   margin-top: 10px;
 }
+.shell {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #1e1e20;
+  min-height: 10vh;
+}
+.shell-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.shell-text p {
+  font-size: 20px;
+  color: #828282;
+  text-transform: uppercase;
+}
+.shell-icon i {
+  font-size: 20px;
+  color: #828282;
+  margin: 0 10px;
+}
+.shell-icon i:hover {
+  color: #ffffff;
+}
 /* End footer  */
 /* Media Query For Tablet  */
 
@@ -865,6 +893,10 @@ nav ul li:hover .submenu-1 {
     padding: 80px;
   }
   /* end help  */
+  /* shell  */
+  .shell-center {
+    flex-direction: row;
+  }
 }
 /* End Media Query For Tablet  */
 
