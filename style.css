@@ -112,6 +112,54 @@ nav ul li:hover .submenu-1 {
   background-color: #fbfbfb;
 }
 
+.search {
+  margin: 20px;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div::after {
+  content: "";
+  background: #314e52;
+  width: 4px;
+  height: 14px;
+  position: absolute;
+  top: 20px;
+  right: -3px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: #314e52;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: 3px solid #314e52;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #314e52c7;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 500px;
+}
+
 /* navBar  */
 #navBar {
   background-color: #0095e5;
