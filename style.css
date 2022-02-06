@@ -30,81 +30,88 @@ img {
   object-fit: cover;
 }
 nav {
-  background-color: #ffffff;
-  height: 8vh;
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0 50px;
+  height: 8vh;
   align-items: center;
+  padding: 0 40px;
+}
+nav a {
+  font-size: 20px;
+  color: #0095e5;
+}
+nav > ul {
+  display: flex;
+  gap: 20px;
 }
 
-nav a {
-  background-color: #ffffff;
-  color: #0095e5;
-  font-size: 20px;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
+.active,
 nav a:hover {
   color: #616262;
 }
-nav ul {
-  display: flex;
+.submenu-1,
+.submenu-2 {
+  background-color: #ffffff;
 }
-nav li {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-nav li:hover .submenu > li {
-  display: block;
-  top: 0px;
-}
-.submenu li {
-  display: none;
-  position: absolute;
-  top: 0px;
-}
-.submenu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 80px;
+.submenu-1 ul,
+.submenu-2 ul {
   width: 320px;
   z-index: 100;
 }
-.submenu li {
-  position: relative;
-}
 
-.submenu li:after {
-  text-decoration: underline;
+.submenu-1,
+.submenu-2 {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  transition: all 0.1s ease-in-out 0.1s, visibility 0.1s linear 0.1s,
+    z-index 0.1s linear 0.1s;
 }
-.submenu li:hover .submenu_2 li {
-  display: block;
-}
-.submenu_2 li {
-  display: none;
-}
-.submenu_2 {
+.submenu-1 ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 0px;
-  left: 100%;
-  width: 120px;
-}
-
-.search i {
-  color: #616262;
-  font-size: 20px;
+  top: 15px;
+  background-color: #fbfbfb;
   cursor: pointer;
 }
+.submenu-1 ul li {
+  border-bottom: 1px dotted #616262;
+  padding: 12px 10px;
+}
+.submenu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul li:hover .submenu-1 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s, 0s, 0.2s;
+}
+.angle-right {
+  float: right;
+}
+.angle-right:after {
+  content: "";
+  clear: both;
+}
+.submenu-1 ul li:hover .submenu-2 {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s, 0s, 0.3s;
+}
+.submenu-2 ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -13px;
+  left: 322px;
+  background-color: #fbfbfb;
+}
+
 /* navBar  */
 #navBar {
   background-color: #0095e5;
